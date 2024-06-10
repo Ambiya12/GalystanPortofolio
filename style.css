@@ -175,7 +175,6 @@ ul a .active {
 }
 .contact{
     padding: 50px 50px;
-    padding-left: 200px;
     text-align: center;
     background-color: #fff;
 }
@@ -524,7 +523,7 @@ ul a .active {
     justify-content: space-evenly;
 }
 
-.contact-left{
+.contact-left{ 
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -609,6 +608,94 @@ footer p {
 .social-links img {
     width: 20px;
 }
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .main .men {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .main .main-detil h1 {
+        font-size: 36px;
+    }
+    
+    .main .main-detil h4 {
+        font-size: 24px;
+    }
+    
+    .main .btn button,
+    .main .btn .btn-2 {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .social i {
+        font-size: 32px;
+    }
+    
+    .about {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main .main-detil h1 {
+        font-size: 28px;
+    }
+    
+    .main .main-detil h4 {
+        font-size: 18px;
+    }
+    
+    .main .btn button,
+    .main .btn .btn-2 {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .social i {
+        font-size: 24px;
+    }
+    
+    .about {
+        padding: 30px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        padding: 20px 10%;
+    }
+
+    .nav .link ul {
+        gap: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .nav .link ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .nav .link ul li {
+        width: 100%;
+    }
+
+    .nav .link ul a {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
 
 @media screen and (max-width: 990px){
     .container{
@@ -650,5 +737,14 @@ footer p {
         border-right: 15px solid #fff;
         border-left: 0;
         left: -15px
+    }
+}
+
+@media (max-width:880px){
+    .contact-inputs{
+       width: 80vw;
+    }
+    .contact-right{
+        display: none;
     }
 }
