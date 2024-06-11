@@ -18,12 +18,14 @@ body {
     height: 100vh;
     background-color: #fff; /* Updated background color to white */
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 200px;
+}
+.nav .logo h2 {
+    margin: 0;
 }
 
 .nav .link ul {
@@ -74,6 +76,7 @@ ul a .active {
     justify-content: center;
     gap: 6rem;
     margin-top: 70px;
+    padding: 0 20px;
 }
 
 .main .men {
@@ -100,6 +103,10 @@ ul a .active {
     margin-bottom: 20px;
 }
 
+.main .btn {
+    margin-bottom: 20px;
+}
+
 .main .btn button {
     padding: 8px 20px;
     background: transparent;
@@ -122,6 +129,9 @@ ul a .active {
 .main .btn .btn-2:hover {
     background: #f4637b;
     transform: scale(1.1);
+}
+.social {
+    margin-bottom: 20px;
 }
 .social a {
     text-decoration: none;
@@ -156,9 +166,8 @@ ul a .active {
 }
 
 .about{
-    padding: 100px 100px;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    margin-top: 40px;
+    padding: 50px 20px;
     text-align: center;
     background-color: #fff;
 }
@@ -674,11 +683,30 @@ footer p {
         gap: 1rem;
     }
 }
+
 @media (max-width: 480px) {
     .nav {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 5%;
+        position: relative;
+    }
+
+    .nav .link {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav .link.active {
+        display: flex;
     }
 
     .nav .link ul {
@@ -694,20 +722,23 @@ footer p {
     .nav .link ul a {
         width: 100%;
         padding: 10px 0;
+        text-align: left;
     }
-}
 
-@media screen and (max-width: 990px){
-    .container{
+@media screen and (max-width: 990px) {
+    .containers {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
 }
-@media screen and (max-width: 650px){
-    .container{
+
+@media screen and (max-width: 650px) {
+    .containers {
         grid-template-columns: 1fr;
+        padding: 1rem 20px;
     }
 }
+
 @media screen and (max-width: 600px){
     
     .timeline{
