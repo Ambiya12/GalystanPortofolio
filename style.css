@@ -105,6 +105,7 @@ ul a .active {
 
 .main .btn {
     margin-bottom: 20px;
+    color: #2a2a2a;
 }
 
 .main .btn button {
@@ -220,7 +221,7 @@ ul a .active {
     border-radius: 10px;
 }
 .css{
-    width: 60%;
+    width: 75%;
     animation: css 6s;
 }
 .htmls{
@@ -228,22 +229,29 @@ ul a .active {
     animation: htmls 6s;
 }
 .Js{
-    width: 50%;
+    width: 65%;
     animation: Js 6s;
 }
 .python{
     width: 60%;
     animation: python 6s;
 }
-.Cpro{
+.php{
     width: 60%;
-    animation: Cpro 6s;
+    animation: php 6s;
 }
 .Reactjs{
-    width: 40%;
+    width: 60%;
     animation: Reactjs 6s;
 }
-
+.NodeJS{
+    width: 40%;
+    animation: NodeJS 6s;
+}
+.sql{
+    width: 45%;
+    animation: sql 6s;
+}
 @keyframes htmls{
     0%{
         width: 0%;
@@ -257,7 +265,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 75%;
     }
 }
 @keyframes Js{
@@ -265,7 +273,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 65%;
     }
 }
 @keyframes python{
@@ -276,7 +284,7 @@ ul a .active {
         width: 60%;
     }
 }
-@keyframes Cpro{
+@keyframes php{
     0%{
         width: 0%;
     }
@@ -289,7 +297,23 @@ ul a .active {
         width: 0%;
     }
     100%{
+        width: 60%;
+    }
+}
+@keyframes NodeJS{
+    0%{
+        width: 0%;
+    }
+    100%{
         width: 40%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
     }
 }
 .inner{
@@ -314,21 +338,25 @@ ul a .active {
     border-radius: 2px;
 }
 
-.containers{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+.wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+    ;
     align-items: center;
     text-align: center;
-    grid-gap: 1rem;
     padding: 1rem 80px;
     font-size: 1.2rem;
+    width: 100%;
 }
 
-.skills-box{
-    padding: 1rem;
+.skill-box{
+    justify-content: center;
+    align-items: center;
     color: #2a2a2a;
     cursor: pointer;
+    padding: 1rem;
+    width: 33%;
 }
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
@@ -726,16 +754,20 @@ footer p {
     }
 
 @media screen and (max-width: 990px) {
-    .containers {
-        grid-template-columns: repeat(2, 1fr);
+    .wrap-container {
         padding: 2rem 50px;
+    }
+    .skill-box{
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .containers {
-        grid-template-columns: 1fr;
+    .wrap-container {
         padding: 1rem 20px;
+    }
+    .skill-box{
+        width: 100%;
     }
 }
 
