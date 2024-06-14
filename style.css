@@ -215,7 +215,8 @@ ul a .active {
 .bar span {
     display: block;
     height: 100%;
-    background: linear-gradient(135deg, #61dafb, #21a1f1);
+    border: solid 0.1em #2a2a2a;
+    background: linear-gradient(135deg, #fff, #abbbc5);
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -479,8 +480,8 @@ ul a .active {
    
 .text-box{
     padding: 20px 30px;
-    background: #2a2a2a;
-    border: solid 0.3em #f4637b;
+    background: rgb(247, 245, 245);
+    border: solid 0.3em #2a2a2a;
     color: #fff;
     position: relative;
     border-radius: 6px;
@@ -495,12 +496,14 @@ ul a .active {
 .container img{
     position: absolute;
     width: 40px;
+    border: solid 0.1em #2a2a2a;
     border-radius: 50px;
     right: -20px;
     top: 32px;
     z-index: 2;
 }
 .right-container img{
+    border: solid 0.1em #2a2a2a;
     left: -20px;
 }
 .timeline::after{
@@ -525,10 +528,16 @@ ul a .active {
 }
 .text-box h2{
     font-weight: 600;
+    color: #2a2a2a;
 }
 .text-box small{
     display: inline-block;
     margin-bottom: 15px;
+    color: #2a2a2a;
+}
+.text-box p{
+    color: #2a2a2a;
+}
 }
 .left-container-arrow{
     height: 0;
