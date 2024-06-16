@@ -222,11 +222,11 @@ ul a .active {
     border-radius: 10px;
 }
 .css{
-    width: 75%;
+    width: 70%;
     animation: css 6s;
 }
 .htmls{
-    width: 75%;
+    width: 70%;
     animation: htmls 6s;
 }
 .Js{
@@ -238,11 +238,11 @@ ul a .active {
     animation: python 6s;
 }
 .php{
-    width: 60%;
+    width: 55%;
     animation: php 6s;
 }
 .Reactjs{
-    width: 60%;
+    width: 55%;
     animation: Reactjs 6s;
 }
 .NodeJS{
@@ -258,7 +258,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 75%;
+        width: 70%;
     }
 }
 @keyframes css{
@@ -266,7 +266,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 75%;
+        width: 70%;
     }
 }
 @keyframes Js{
@@ -290,7 +290,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 55%;
     }
 }
 @keyframes Reactjs{
@@ -298,7 +298,7 @@ ul a .active {
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 55%;
     }
 }
 @keyframes NodeJS{
