@@ -517,7 +517,7 @@ ul a .active {
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-    animation: moveline 5s linear forwards;
+    animation: moveline 7s linear forwards;
     animation-play-state: paused;
 }
 
