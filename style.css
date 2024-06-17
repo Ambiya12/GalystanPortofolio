@@ -10,13 +10,13 @@
 body {
     opacity: 0;
     transition: opacity 3s;
-    background-color: #fff; /* Updated background color to white */
+    background-color: #fff; 
 }
 
 .hero {
     width: 100%;
     height: 100vh;
-    background-color: #fff; /* Updated background color to white */
+    background-color: #fff;
 }
 .nav {
     display: flex;
@@ -56,7 +56,7 @@ ul a .active {
     overflow: hidden; 
     white-space: nowrap;
     border-right: 0.15em solid orange; 
-    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation: typing 7s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -220,38 +220,39 @@ ul a .active {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    animation-play-state: paused;
 }
-.css{
+.css {
     width: 70%;
-    animation: css 6s;
+    animation: css 6s forwards;
 }
-.htmls{
+.htmls {
     width: 70%;
-    animation: htmls 6s;
+    animation: htmls 6s forwards;
 }
-.Js{
+.Js {
     width: 65%;
-    animation: Js 6s;
+    animation: Js 6s forwards; 
 }
-.python{
+.python {
     width: 60%;
-    animation: python 6s;
+    animation: python 6s forwards;
 }
-.php{
+.php {
     width: 55%;
-    animation: php 6s;
+    animation: php 6s forwards;
 }
-.Reactjs{
+.Reactjs {
     width: 55%;
-    animation: Reactjs 6s;
+    animation: Reactjs 6s forwards;
 }
-.NodeJS{
+.NodeJS {
     width: 40%;
-    animation: NodeJS 6s;
+    animation: NodeJS 6s forwards;
 }
-.sql{
+.sql {
     width: 45%;
-    animation: sql 6s;
+    animation: sql 6s forwards;
 }
 @keyframes htmls{
     0%{
@@ -451,6 +452,7 @@ ul a .active {
     box-sizing: border-box;
     opacity: 0;
     z-index: 1;
+    animation-play-state: paused;
 }
 @keyframes movedown {
     0%{
@@ -506,18 +508,19 @@ ul a .active {
     border: solid 0.1em #2a2a2a;
     left: -20px;
 }
-.timeline::after{
-    content: '';
+.timeline-line {
     position: absolute;
     width: 6px;
-    height: 100%;
+    height: 0;
     background: #2a2a2a;
     top: 0;
     left: 50%;
-    margin-left: -3px;
+    transform: translateX(-50%);
     z-index: 0;
-    animation: moveline 5.5s linear forwards;
+    animation: moveline 5s linear forwards;
+    animation-play-state: paused;
 }
+
 @keyframes moveline {
     0%{
         height: 0;
