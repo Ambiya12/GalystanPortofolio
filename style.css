@@ -168,7 +168,7 @@ ul a .active {
 
 .about{
     margin-top: 40px;
-    padding: 50px 20px;
+    padding: 100px 150px;
     text-align: center;
     background-color: #fff;
 }
@@ -188,13 +188,13 @@ ul a .active {
     text-align: center;
     background-color: #fff;
 }
-.about h2, .contact h2 {
+.contact h2 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #2a2a2a;
 }
 
-.about p, .contact p {
+ .contact p {
     font-size: 18px;
     color: #2a2a2a;
     line-height: 1.6;
@@ -323,6 +323,7 @@ ul a .active {
 }
 
 .header{
+    margin-bottom: 30px;
     text-align: center;
     color:#2a2a2a ;
     padding: 1rem;
@@ -433,6 +434,71 @@ ul a .active {
     z-index: 2;
 }
 
+.project {
+    background:white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project .header {
+    margin-bottom: 40px;
+}
+
+.project .listproject {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project .listp {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.506);
+    max-width: 320px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project .listp:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project .listp img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.project .listp:hover img {
+    transform: scale(1.05);
+}
+
+.project .git {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project .git:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
 .header-Edu{
     text-align: center;
     color:#2a2a2a ;
@@ -538,10 +604,10 @@ ul a .active {
     margin-bottom: 15px;
     color: #2a2a2a;
 }
-.text-box p{
+.text-box p {
     color: #2a2a2a;
 }
-}
+
 .left-container-arrow{
     height: 0;
     width: 0;
@@ -764,6 +830,7 @@ footer p {
         padding: 10px 0;
         text-align: left;
     }
+}
 
 @media screen and (max-width: 990px) {
     .wrap-container {
@@ -815,7 +882,7 @@ footer p {
     }
 }
 
-@media (max-width:880px){
+@media (max-width:880px) {
     .contact-inputs{
        width: 80vw;
     }
